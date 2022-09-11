@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.hero {
+   background-image: url(./images/pattern-bg.png);
+
+   margin: 0;
+   text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero-heading {
+   color: #fff;
+   padding: 2rem 2rem 1rem 2rem;
+   font-size: 2.5rem;
+   font-weight: 500;
+}
+
+.hero-first-container {
+   padding-bottom: 5rem;
+}
+.hero-input {
+   display: inline-block;
+   font-family: "Rubik", sans-serif;
+   padding: 1rem;
+   width: 450px;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   border-radius: 1rem 0 0 1rem;
+   color: hsl(0, 0%, 59%);
+}
+.hero-input,
+button {
+   outline: none;
+   border: none;
+}
+button {
+   padding: 1rem 1.5rem;
+   font-size: 1.3rem;
+   border-radius: 0 1rem 1rem 0;
+   cursor: pointer;
+   background-color: hsl(0, 0%, 17%);
+}
+
+button:hover {
+   background-color: hsl(0, 0%, 59%);
+}
+
+.btn-img {
+   width: 15px;
+}
+.hero-second-container {
+   position: relative;
+   top: 20%;
+   margin: -4.2rem auto;
+   z-index: 500;
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   padding: 1rem;
+   background-color: #fff;
+   border-radius: 1rem;
+   box-shadow: 0 0 1.2rem rgb(0 0 0 / 25%);
+}
+
+.hero-content {
+   width: 250px;
+   text-align: left;
+   padding: 0 2rem;
+}
+
+.ip-address,
+.location,
+.timezone {
+   border-right: 1px solid hsl(0, 0%, 59%);
+}
+.hero-content p {
+   color: hsl(0, 0%, 59%);
+   font-size: 0.9rem;
+}
+
+.hero-content h3 {
+   color: hsl(0, 0%, 17%);
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+
+.leaflet-container {
+   width: 100%;
+   height: 70vh;
 }
